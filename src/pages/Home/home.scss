@@ -73,10 +73,25 @@ p{
 /// Animation ///
 
 @keyframes blue-neon {
- 0%{
-     color: yellow;
-    }
-   100% {
-       color: blue;
-   }    
+// 0%{
+//      color: yellow;
+//     }
+// 50%{
+//     color: brown;
+// }
+
+// 100% {
+//        color: blue;
+//    }
+/// simple keyframe///
+
+0%,10%,15%,20%,30%,35%,40%,50%,55%,60%,70%,75%,80%,85%,90%,100%{
+    text-shadow: 9px 9px 18px yellow;
+}
+
+10%{
+    text-shadow: none;
+}
+
+
 }
