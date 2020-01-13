@@ -5,8 +5,8 @@ class Home extends Component{
     render(){
         return(
             <Fragment>
-                <header className="content" id="header-content">
-                    <div className="header-content">
+                <header className="header-content" id="header-content">
+                    <div className="header-text">
                         <p className ="icon">
                             <i class="fas fa-gamepad"></i>
                         </p>
