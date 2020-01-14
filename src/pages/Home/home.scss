@@ -54,6 +54,8 @@ p{
    align-items: center;
    text-align: center;
 
+   z-index: 0;
+
 }
 
 .header-text{
@@ -69,6 +71,92 @@ p{
     font-size: 50px;
     animation: blue-neon 2s infinite alternate;
 }
+
+.header-text .orange-neon-title,
+.header-text .icon{
+
+   margin: 0;
+   font-size: 60px;
+   animation: orange-neon 2s infinite alternate;
+    
+} 
+
+
+.header-text .description{
+
+margin-top: 40px;
+font-size: 20px;
+
+
+}
+
+.description::first-line {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.btn-link{
+    display: inline-block;
+    padding: 15px 30px;
+    border: 6px dotted #d79e5b;
+    border-radius: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+  //  text-transform: uppercase;
+    text-shadow:
+     0 -1px 4px #fff,
+     2px 2px 10px #ff0,
+     2px -2px 20px #ff8000;
+     transition: .5s ease;
+}
+
+.btn-link:hover{
+    text-shadow: none;
+    border: 6px dotted rgba(255,255,255,.5)
+}
+/////////  MAIN //////////
+
+main{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: relative;
+    margin-top: 100vh;
+    font-size: 18px;
+    // background: black;
+}
+
+main .container { 
+    padding: 50px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main .h2-subtitle{
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+main .h2-subtitle, main .capital-letter{
+    text-shadow: 0 0 15px rgba(255,255,255,.5),
+    
+    0 0 10px rgba(255,255,255,.5)
+}
+
+main .capital-letter {
+    font-size: 55px;
+    font-family: serif;
+    margin-right: 5px;
+    line-height: 15px;
+}
+
+
 
 /// Animation ///
 
@@ -86,12 +174,34 @@ p{
 /// simple keyframe///
 
 0%,10%,15%,20%,30%,35%,40%,50%,55%,60%,70%,75%,80%,85%,90%,100%{
-    text-shadow: 9px 9px 18px yellow;
+    text-shadow: 
+     9px 9px 18px #3485ff,
+     3px 3px 5px #00246c,
+    -3px -3px 5px #00246c,
+    -9px -9px 27px #3485ff;
 }
 
-10%{
+10%,15%, 60%{
     text-shadow: none;
 }
 
 
 }
+
+@keyframes orange-neon {
+    
+    
+    0%,10%,15%,20%,30%,35%,40%,50%,55%,60%,70%,75%,80%,85%,90%,100%{
+        text-shadow: 
+         0px -1px 4px #ffff,
+         0px -2px 18px #ff0,
+        -0px -10px 20px #ff8000,
+       
+    }
+    
+    10%,15%, 60%{
+        text-shadow: none;
+    }
+    
+    
+    }
