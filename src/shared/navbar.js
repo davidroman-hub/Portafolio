@@ -1,5 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './navbar.scss' 
+
+
+
+
 
 const Navbar = (props) =>{
     return(
@@ -16,9 +21,10 @@ const Navbar = (props) =>{
                 <div className="spacer"/>
                 <div className="toolbar_navigation_item">
                     <ul>
-                        <li><NavLink exact to ="/contactMe" className="item" activeClassName="is-selected"> Contact Me </NavLink></li>
-                        <li><NavLink exact to ="/aboutMe" className="item" activeClassName="is-selected"> About Me </NavLink></li>
                         <li><NavLink exact to ="/Home" className="item" activeClassName="is-selected"> Home </NavLink></li>
+                        <li><NavLink exact to ="/aboutMe" className="item" activeClassName="is-selected"> About Me </NavLink></li>
+                        <li><NavLink exact to ="/contactMe" className="item" activeClassName="is-selected"> Contact Me </NavLink></li>
+
                     </ul>
 
                 </div>
